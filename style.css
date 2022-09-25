@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+}
+
+body{
+  background: #cc2b2c
+}
+
+html{
+  font-size: 70%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.imagemdelogo{
+  width: 120px;
+}
+
+.titulo{
+  font-size: 30px;
+  color: #fff;
+}
+
+section{
+  padding:2rem 9%;
+}
+
+.heading{
+  text-align: center;
+  font-size: 4.0rem;
+  padding:1rem;
+  color:#000;
+}
+
+.heading span{
+  color: red;
+}
+
+
+header{
+  position: fixed;
+  top:0; left: 0; right:0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f4d894;
+  padding:1rem 5%;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+  font-size: 2.5rem;
+  color:#fff;
+}
+
+
+header .navbar a{
+  font-size: 2.40rem;
+  margin-left: 2rem;
+  color:#fff;
+}
+
+header .navbar a:hover{
+  text-decoration: underline;
+  transition: 0.9s ease-in-out;
+}
+
+#menu-bar{
+  font-size: 3rem;
+  cursor: pointer;
+  color:#666;
+  border:.1rem solid #666;
+  border-radius: .3rem;
+  padding:.5rem 1.5rem;
+  display: none;
+}
+
+
+
+@keyframes float{
+  0%, 100%{
+    transform: translateY(0rem);
+  }
+  50%{
+    transform: translateY(3rem);
+  }
+}
+
+
+.ingredientes .conteudo-ingre{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+
+.ingredientes p{
+  font-size: 20px;
+}
+
+.ingre1{
+  border-radius: 30px;
+}
+
+.secao .right {
+  align-self: flex-end;
+}
+
+.secao .right img {
+  height: 520px;
+  vertical-align: middle;
+}
+
+
+section {
+  margin-top: 100px;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 120%;
+  margin: 0;
+}
+
+h2.light {
+  color: #fff;
+}
+
+.pessoa1{
+  border-radius: 30px;
+}
+
+section p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 200%;
+  color: var(--dark-blue-color);
+  margin: 12px 0;
+}
+
+.conteudo2 {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.conteudo2 .mobile-btn {
+  display: none;
+}
+
+.conteudo2 .cards::before {
+  content: "";
+  width: 28px;
+  position: absolute;
+  height: 40px;
+  top: -40px;
+  left: 60px;
+  background: var(--dark-blue-color);
+  border-radius: 24px 24px 0 0;
+}
+
+.conteudo2 .testimonial-cards:last-child::before {
+  left: 40px;
+  top: -50px;
+  border-radius: 0 0 24px 24px;
+  height: calc(100% + 90px);
+  z-index: -1;
+}
+
+.conteudo2 .card .content {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+  border-radius: 24px;
+  padding: 24px 32px;
+  background: var(--light-blue-color);
+}
+
+.conteudo2 .card .info h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 120%;
+  margin: 0;
+  color: var(--dark-blue-color);
+}
+
+.conteudo2 .card .info {
+  padding: 24px 32px;
+  background: #fff;
+  border-radius: 24px;
+}
+
+.conteudo2 .card .info p.company {
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 120%;
+  color: var(--dark-blue-color);
+}
+
+.conteudo2 .card img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  right: 32px;
+  bottom: 20px;
+}
+
+.conteudo2 .card:last-child {
+  transform: translateX(20px);
+}
+
+.conteudo2 .ingredientes-site {
+  margin-bottom: 30px;
+}
+
+
+.footer{
+  background:#000;
+  text-align: center;
+}
+
+.footer .share{
+  display: flex;
+  gap:1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer .rodape{
+  padding:2.5rem 1rem;
+  color:#fff;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.footer .rodape span{
+  color:var(--red);
+}
+
+#scroll-top{
+  position: fixed;
+  top:-120%;
+  right:2rem;
+  padding:.5rem 1.5rem;
+  font-size: 4rem;
+  background:var(--red);
+  color:#fff;
+  border-radius: .5rem;
+  transition: 1s linear;
+  z-index: 1000;
+}
+
+#scroll-top.active{
+  top:calc(100% - 12rem)
+}
+
+
+  header .navbar a{
+    margin: 1.5rem;
+    padding:1.5rem;
+    display: block;
+    border:.2rem solid rgba(0,0,0,.1);
+    border-left:.5rem solid yellow;
+    background:#fff;
+  }
+
+}
+
+
